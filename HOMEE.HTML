@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>P FORWARD </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-name {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+.header {
+    padding-bottom: 4rem;
+}
+.links {
+    font-size: 1.2rem;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#title {
+    background-color: black;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+.moto {
+    color: white;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.phone-image {
+    width: 100%;
+    margin-left: 150px;
+ 
+}
+
+#features {
+    text-align: center;
+    padding: 7% 5%;
+    background-image: url(12.GIF);
+    background-repeat: revert;
+    background-position: center;
+    width: 2000;
+    height: 1000;
+}
+.feature-item {
+    margin: auto;
+}
+
+.feature-block {
+    padding: 8rem  5rem ;
+    margin: auto;
+    
+}
+.fa-sticker {
+    color: #ef8172;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+.fa-sticker:hover {
+    color: #ff4c68;
+}
+.feature-heading {
+    font-family: 'Montserrat-bold' sans-serif;
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.feature-body {
+    color: orange;
+}
+
+.carousel-item {
+    padding: 2% 8%;
+}
+
+
+  
+@media (max-width: 768px) {
+    .phone-image {
+        transform: rotate(0deg);
+        padding-top: 5%;
+    }
+    .phone-image-container {
+        text-align: center;
+    }
+}
+
+
+
+#footer {
+    padding: 1% 15%;
+    text-align: center;
+    font-size:  1.5rem;
+}
+.cpy-right {
+    padding-top: 2%;
+}
+.fa-footer-icon {
+    color: #000000;
+    margin: 0 1%;
+}
+
+#verification-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.verification-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 30px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    text-align: center;
+    flex: 1; 
+     margin-right: 200px;
+     margin-left: 200px;
+     margin-top: 30px;
+}
+#main {
+    background-color: #000000;
+    padding: 7% 0;
+}
+
+small{
+    font-size: 15px;
+    color: white;
+}
+
+.fa-icon {
+    font-size: 5rem;
+}
+.fa-icon.fa-beat {
+    position: absolute;
+    right: 100px;
+    font-size: 3rem;
+    color: white;
+}
+.fa-icon.fa-bounce {
+    position: absolute;
+    color: wheat;
+    left: 100px;
+}
+.form-text {
+    font-size: 25px;
+    color: white;
+
+}
+b{
+            background-color: orange;
+            border: 5px solid #ccc;
+            border-radius: 10px;  
+            border-color: yellow;
+            color: white;
+           
+        }
+        a{
+ text-decoration: none;
+        }
+        i{
+          
+            
+            border-radius: 10px;  
+            border-color: pink;
+            color: orange;
+           
+        }
+
+        mark {
+
+            font-size: 20px;
+            font-family: algerian;
+        }
+        .input_wrap .submit_btn{  
+        font-size:13px;  
+        border-radius: 15px; 
+         text-transform: uppercase; 
+          letter-spacing: 1px; 
+           cursor: pointer;  
+           width: 50%;  
+           background: orange;  
+           padding: 3px;  
+           border: 10; 
+            color:white;
+        }
+  .input_wrap .submit_btn:hover
+  {  background: #051c94;}
+
+      </style>
+
+       <script>
+        function validateForm() {
+            var phishing_url = document.getElementById('phishing_url').value;
+
+            if (phishing_url === "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+  
+<div id="top">
+  <section id="title">
+<div class="container-fluid">
+    <nav data-bs-theme="dark" class="navbar header navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button"  data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <section>
+ <a class="navbar-brand brand-name" href="#content"><i>P FORWARD <br>SELLING CAR
+ </i></a> </section>
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1"
+   id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel"><a class="navbar-brand" href="#"></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+        <ul class="navbar-nav  ms-auto">
+            <li class="nav-item">
+                <a class="nav-link links" href="CAR.html" ><mark>CARS </mark></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="contact.html" ><mark>CONTACT</mark></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="aboutus.html" ><mark>AboutUS</mark></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link links" href="login.html" ><mark>SignIN</mark></a>
+            </li>
+        </ul>
+    
+    </div>
+  </div>
+</nav>
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="moto">Welcome to P Foward Selling car ltd.
+          </h1>
+      </div>
+      <div class="col-lg-6 phone-image-container">
+        <img class="phone-image" src="1.JPEG" alt="iphone-mockup" height="90%" width="50%">
+
+      
+      </div>
+    </div>
+
+    <div>
+
+    </div>
+  </div></div>
+  </section>
+
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row feature-block">
+      <div class="col-lg-4 feature-item">
+        <i class="fa-sticker fa-solid fa-circle-check fa-beat"></i>
+        <h3 class="feature-heading">SELLING.</h3>
+        <p class="feature-body">Staying safe has never been easier</p>    
+      </div>
+
+      <div class="col-lg-4 feature-item">
+        <i class="fa-sticker fa-solid fa-shield-halved fa-beat"></i>  
+        <h3 class="feature-heading">Secure</h3>
+        <p class="feature-body">Safe and secure to use</p>    
+      </div>
+
+      <div class="col-lg-4 feature-item">
+        <i class="fa-sticker fa-solid fa-heart fa-bounce"></i>
+        <h3 class="feature-heading">Reliable</h3>
+        <p class="feature-body">With a model that delivers a 95% success rate, your safety is guaranteedc</p>    
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="main">
+    <i class="fa-icon fa-solid fa-bomb fa-bounce"></i>
+    <i class="fa-icon fa-solid fa-virus-covid fa-beat"></i>
+        <section class="content">
+          <section id="content">
+ <p class="form-text">
+ P Foward Selling car ltd. we strive to take care of our customers the way we take care
+of our best friends and family!
+</p>
+
+<p>
+<small class="form-text-small">Enter your marque car to search up to 300 
+and we help you to chechk up 
+</small>
+</p>
+
+<form id="verification-form" action="car.html" method="POST" onsubmit="return validateForm();">
+        <input type="text" id="phishing_url" name="phishing_url" placeholder="Search Car......." required>
+        <div class="input_wrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="submit_btn">&nbsp;&nbsp;&nbsp;&nbsp; Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </div>
+    </form>
+
+    <section>
+        <div class="input_wrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#top" class="submit_btn" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; BACK TO TOP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </section>
+   
+</section>
+</section>
+  </section>
+  </section>
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <a href="https://twitter.com/ObedObe51305670?t=gXdPWvzgMZAdjWJ859kPCA&s=08"><i class="fa-brands fa-footer-icon fa-twitter"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100012912285306"><i class="fa-brands fa-footer-icon fa-facebook"></i></a>
+    <a href="https://www.instagram.com/u_____neza/"><i class="fa-brands fa-footer-icon fa-instagram"></i></a>
+    <a href="support@yourdomain.com"><i class="fa-solid fa-footer-icon fa-envelope"></i></a>
+    <p class="text-secondary cpy-right" >&copy; P FORWARD</p>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/c2a64c6407.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+      
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create an Account</title>
+<style>
+*{  margin: 0;  padding: 0;  box-sizing: border-box;  list-style: none;  font-family: 'Montserrat', sans-serif;}
+.wrapper{  justify-content: center;  align-items: center;  min-height: 100vh;  display: flex;}
+.registration_form{  border-radius: 5px;  width: 400px;  background: rgba(100, 40, 300, 0.6);  padding: 25px; margin-right: 87px;}
+.registration_form .title{  color: white;  background:orange;  letter-spacing: 2px;  font-weight: 700;  text-align: center;  font-size: 25px;  text-transform: uppercase;  margin-top: -25px;  margin-left:-25px;  margin-right:-25px;}
+.form_wrap{  margin-top: 35px;}
+.form_wrap .input_wrap{  margin-bottom: 15px;  }
+.form_wrap .input_wrap:last-child{  margin-bottom: 0;}
+.form_wrap .input_wrap label{  margin-bottom: 3px;  color: #1a1a1f;  display: block;}
+.form_wrap .input_grp{  display: flex;  justify-content: space-between;}
+.form_wrap .input_grp  input[type="text"]{  width: 165px;}
+.form_wrap  input[type="text"]{  width: 100%;  padding: 10px;  outline: none;  border-radius: 3px;  border: 1.3px solid #9597a6;}
+.form_wrap  input[type="text"]:focus{  border-color: #063abd;}
+.form_wrap ul{  padding: 8px 10px;  border-radius: 20px;  display: flex;  justify-content: center;  border:1px solid rgb(115, 185, 235);  width:70%;  background: rgb(206, 238, 242);  margin-left: 15%;}
+/* Submit Button */.form_wrap .button{  font-size:17px;  border-radius: 2px;  text-transform: uppercase;  letter-spacing: 2px;  cursor: pointer;  width: 50%;  background: grey;  padding: px;  border: 0;  color:white;}
+/* Button Hover effect */.form_wrap .button:hover{  background: orange;}
+
+a{text-decoration: none;
+
+}
+        h1{
+            font-family:bell-MT;
+            font-size: 70;
+        }
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(12.gIF);
+}
+
+    header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    opacity: 3; /* Start with opacity set to 0 */
+    animation: fadeIn 3s ease-in-out forwards; /* Apply fade-in animation */
+       animation: glowing 5000ms infinite;
+       font-weight: 250%;
+     
+}
+
+
+     @keyframes glowing {
+50% {
+   background-color: orange;
+ }
+ 50% {
+   background-color: orange;
+ }
+}
+
+         div.registration_form{
+          margin-left: 300px;
+          margin-top: -200px;
+        }
+h1{
+  font-size: 48px;
+}
+
+
+</style>
+<script>
+  function createAccount() {
+      // Assuming you want the confirmation dialog here
+      var confirmation = SIGNUP("Are you sure you want to create an account?");
+      
+      if (confirmation) {
+        // Assuming you want to check if all fields are filled before redirecting
+        var firstName = document.getElementById('fullname').value;
+        var lastName = document.getElementById('telephone').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (firstName === "" || lastName === "" || email === "" || password === "") {
+          alert("Please fill out all fields.");
+          return false;
+        }
+
+        // Validate email format
+        var emailRegex = /\S+@\S+\.\S+/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // Validate password format (at least one uppercase, one lowercase, one digit, one special character, and at least 8 characters)
+        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$/;
+        if (!passwordRegex.test(password)) {
+          alert("Password must contain at least one uppercase letter, one lowercase letter, one digit, one special character, and be at least 8 characters long.");
+          return false;
+        }
+
+        window.location.href = "login.html";
+        return false; 
+      } else {
+        alert("Account creation canceled.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body >
+
+<header>
+         <img src="p.jpeg" align="left" width="200" height="85" style="margin-top:-15px; margin-bottom: -14px; max-width: 300;" >
+        <h1>Create Account </h1>
+    </header>
+<form action="login.html">
+<div class="wrapper"> 
+   
+<div class="registration_form">
+<!-- Title -->  
+<div class="title"> Create Account   </div>
+<!-- Form --> 
+ 
+ <div class="form_wrap">  
+ <div class="input_grp">
+     
+ <div class="input_wrap">   <label for="name"><b>First Name</b></label>   <input type="text" id="fullname" name="fullname" required>   
+ </div> <br>
+ <div class="input_wrap">  <label for="telephone"><b>Last Name</b></label>   <input type="text" id="telephone" name="telephone" required>  
+ </div>  </div>
+
+ <div class="input_wrap">  <label for="Email"><b>Email</b></label>  <input type="email" id="email" name="email" required> </div>
+
+
+<div class="password">  <label for="country"><b>Password</b>  <br></label>  <input type="password" id="password" name="password" required>
+ </div>
+
+<br><br>
+ 
+<div class="input_wrap"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                        <button class="button"><b>SIGN UP</b></button>
+                     </div>
+                  </form>
+                  
+ </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(12.GIF);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+            height: 70PX;
+            opacity: 3;
+            /* Start with opacity set to 0 */
+            animation: fadeIn 3s ease-in-out forwards;
+            /* Apply fade-in animation */
+            animation: glowing 5000ms infinite;
+            font-weight: 250%;
+        }
+
+        @keyframes glowing {
+            50% {
+                background-color: orange;
+            }
+            50% {
+                background-color: orange;
+            }
+        }
+
+        h1 {
+            margin: 8;
+        }
+
+        .contact-form {
+            font-size: 20px;
+            font-family: 'Bell MT', serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(55, 165, 0, 0.4); /* Orange with 40% transparency */
+    color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+         background-color: rgba(25, 165, 0, 0.4); /* Orange with 40% transparency */
+    color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+      
+
+        /* About section styling */
+        .about-section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+             background-color: rgba(70, 26, 250, 0.4); /* skyblue with 70% transparency */
+    color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            /* Center the content within the section */
+        }
+
+        .about-section h2 {
+            font-size: 30px;
+            /* Increase font size for the section heading */
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.5;
+            /* Adjust line height for readability */
+            color: #333;
+            /* Use a dark text color for better contrast */
+        }
+
+        .about-section pre {
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        h1 {
+            font-family: 'Bell MT', serif;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            color: yellowgreen;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+            font-size: 27px;
+            font-family: 'Cambria', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Cambria', sans-serif;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="p.jpeg" align="left" width="200" height="101" style="margin-top: -15px; margin-bottom: 7px; max-width: 300;" >
+        <h1>Contact Us</h1>
+    </header>
+    <div class="about-section">
+        <section class="contact-form">
+            <BR>
+            <h2>Contact Form</h2>
+            <p style="color: black;"><big><b>If at any time you have questions about the products, on ordering or delivery, or if something went wrong, please contact us.</b></big></p>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p style="color: black;">Email: <a href="mailto:support@pforwardltd.com">support@pforwardltd.com</a></p>
+            <p style="color: black;">Phone: +91 (78) 1414-6396</p>
+            <p style="color: black;">Social Media: <a href="https://www.instagram.com/u_____neza/" target="_blank">Instagram</a></p>
+        </section>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // You can add more validation here if needed
+            var confirmation = confirm("Are you sure you want to submit the form?");
+            
+            if (confirmation) {
+                // You can add AJAX code to submit the form data to the server here
+                alert("Form submitted successfully!");
+            } else {
+                alert("Form submission canceled.");
+            }
+        }
+    </script>
+</body>
+</html>
